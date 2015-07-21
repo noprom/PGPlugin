@@ -10,6 +10,14 @@
 #include "PGMethod.h"
 #import <Foundation/Foundation.h>
 
+
+#import <UIKit/UIKit.h>
+#import "PublicCallConfig.h"
+#import "PublicCallList.h"
+#import "PublicCallPointsManager.h"
+#import "PublicCallListAppModel.h"
+#import "PublicCallPointsManager.h" //(用于查询积分)
+
 @interface PGPluginTest : PGPlugin
 
 

@@ -16,6 +16,14 @@
 		7ACF69AB19FF899A007C64F1 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ACF69AA19FF899A007C64F1 /* CFNetwork.framework */; };
 		7ACF69AD19FF89B1007C64F1 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ACF69AC19FF89B1007C64F1 /* Security.framework */; };
 		80E3D5B21B5E2B480083780C /* PGPluginTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E3D5B11B5E2B480083780C /* PGPluginTest.m */; };
+		80E3D6121B5E602A0083780C /* btn_close.png in Resources */ = {isa = PBXBuildFile; fileRef = 80E3D6091B5E602A0083780C /* btn_close.png */; };
+		80E3D6131B5E602A0083780C /* btn_home.png in Resources */ = {isa = PBXBuildFile; fileRef = 80E3D60A1B5E602A0083780C /* btn_home.png */; };
+		80E3D6141B5E602A0083780C /* GitHubProjectStatic.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 80E3D60B1B5E602A0083780C /* GitHubProjectStatic.a */; };
+		80E3D6161B5E608C0083780C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80E3D6151B5E608C0083780C /* QuartzCore.framework */; };
+		80E3D6181B5E60950083780C /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 80E3D6171B5E60950083780C /* libsqlite3.dylib */; };
+		80E3D61A1B5E609E0083780C /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80E3D6191B5E609E0083780C /* StoreKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		80E3D61C1B5E60C10083780C /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80E3D61B1B5E60C10083780C /* CoreMotion.framework */; };
+		80E3D61E1B5E60CA0083780C /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 80E3D61D1B5E60CA0083780C /* libicucore.dylib */; };
 		8E163D021A8D208500308A8B /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E163D011A8D208500308A8B /* AssetsLibrary.framework */; };
 		8E1D4BDC1AC6094A0028E0F6 /* TencentOpenAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E1D4BDB1AC6094A0028E0F6 /* TencentOpenAPI.framework */; };
 		8E2EF7D61A7808F1007C06F4 /* inc in Resources */ = {isa = PBXBuildFile; fileRef = 8E2EF7D51A7808F1007C06F4 /* inc */; };
@@ -91,6 +99,19 @@
 		7ACF69AC19FF89B1007C64F1 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		80E3D5B01B5E2B480083780C /* PGPluginTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGPluginTest.h; sourceTree = "<group>"; };
 		80E3D5B11B5E2B480083780C /* PGPluginTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PGPluginTest.m; sourceTree = "<group>"; };
+		80E3D6091B5E602A0083780C /* btn_close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_close.png; sourceTree = "<group>"; };
+		80E3D60A1B5E602A0083780C /* btn_home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_home.png; sourceTree = "<group>"; };
+		80E3D60B1B5E602A0083780C /* GitHubProjectStatic.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = GitHubProjectStatic.a; sourceTree = "<group>"; };
+		80E3D60D1B5E602A0083780C /* PublicCallConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PublicCallConfig.h; sourceTree = "<group>"; };
+		80E3D60E1B5E602A0083780C /* PublicCallList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PublicCallList.h; sourceTree = "<group>"; };
+		80E3D60F1B5E602A0083780C /* PublicCallListAppModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PublicCallListAppModel.h; sourceTree = "<group>"; };
+		80E3D6101B5E602A0083780C /* PublicCallPointsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PublicCallPointsManager.h; sourceTree = "<group>"; };
+		80E3D6111B5E602A0083780C /* publicHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = publicHeader.h; sourceTree = "<group>"; };
+		80E3D6151B5E608C0083780C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		80E3D6171B5E60950083780C /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		80E3D6191B5E609E0083780C /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		80E3D61B1B5E60C10083780C /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		80E3D61D1B5E60CA0083780C /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
 		8E163D011A8D208500308A8B /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		8E1D4BDB1AC6094A0028E0F6 /* TencentOpenAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TencentOpenAPI.framework; path = "../SDK/Libs/Release-iphoneos/TencentOpenAPI.framework"; sourceTree = "<group>"; };
 		8E2EF7D51A7808F1007C06F4 /* inc */ = {isa = PBXFileReference; lastKnownFileType = folder; name = inc; path = ../../SDK/inc; sourceTree = "<group>"; };
@@ -165,6 +186,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80E3D61E1B5E60CA0083780C /* libicucore.dylib in Frameworks */,
+				80E3D61C1B5E60C10083780C /* CoreMotion.framework in Frameworks */,
+				8EED6418198A263E000A4449 /* libz.dylib in Frameworks */,
+				80E3D61A1B5E609E0083780C /* StoreKit.framework in Frameworks */,
+				80E3D6181B5E60950083780C /* libsqlite3.dylib in Frameworks */,
+				80E3D6161B5E608C0083780C /* QuartzCore.framework in Frameworks */,
+				7ACF69AB19FF899A007C64F1 /* CFNetwork.framework in Frameworks */,
+				8EED641C198A2654000A4449 /* SystemConfiguration.framework in Frameworks */,
+				7ACF69AD19FF89B1007C64F1 /* Security.framework in Frameworks */,
 				8E3483061B562DB100A40C55 /* AlipaySDK.framework in Frameworks */,
 				8E3483071B562DB100A40C55 /* AMapSearchKit.framework in Frameworks */,
 				8E3483081B562DB100A40C55 /* BaiduMapAPI.framework in Frameworks */,
@@ -173,11 +203,9 @@
 				8E1D4BDC1AC6094A0028E0F6 /* TencentOpenAPI.framework in Frameworks */,
 				8E6E37AC1B0E1B580036EB48 /* ImageIO.framework in Frameworks */,
 				8E163D021A8D208500308A8B /* AssetsLibrary.framework in Frameworks */,
-				7ACF69AD19FF89B1007C64F1 /* Security.framework in Frameworks */,
-				8EED641C198A2654000A4449 /* SystemConfiguration.framework in Frameworks */,
-				7ACF69AB19FF899A007C64F1 /* CFNetwork.framework in Frameworks */,
 				8EED65AA198A62BC000A4449 /* libsqlite3.0.dylib in Frameworks */,
 				8EED6596198A574C000A4449 /* CoreLocation.framework in Frameworks */,
+				80E3D6141B5E602A0083780C /* GitHubProjectStatic.a in Frameworks */,
 				8EED65A8198A6273000A4449 /* OpenGLES.framework in Frameworks */,
 				8EED65A6198A626B000A4449 /* MapKit.framework in Frameworks */,
 				8EED65A0198A5789000A4449 /* Accounts.framework in Frameworks */,
@@ -193,7 +221,6 @@
 				8EED6420198A2668000A4449 /* MediaPlayer.framework in Frameworks */,
 				8EED641E198A265F000A4449 /* CoreTelephony.framework in Frameworks */,
 				8EED641A198A2647000A4449 /* libxml2.dylib in Frameworks */,
-				8EED6418198A263E000A4449 /* libz.dylib in Frameworks */,
 				8EED6416198A2635000A4449 /* CoreVideo.framework in Frameworks */,
 				8EED6414198A262C000A4449 /* CoreMedia.framework in Frameworks */,
 				8EED6412198A2622000A4449 /* MobileCoreServices.framework in Frameworks */,
@@ -205,6 +232,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		80E3D6081B5E602A0083780C /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				80E3D6091B5E602A0083780C /* btn_close.png */,
+				80E3D60A1B5E602A0083780C /* btn_home.png */,
+				80E3D60B1B5E602A0083780C /* GitHubProjectStatic.a */,
+				80E3D60C1B5E602A0083780C /* include */,
+				80E3D6111B5E602A0083780C /* publicHeader.h */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		80E3D60C1B5E602A0083780C /* include */ = {
+			isa = PBXGroup;
+			children = (
+				80E3D60D1B5E602A0083780C /* PublicCallConfig.h */,
+				80E3D60E1B5E602A0083780C /* PublicCallList.h */,
+				80E3D60F1B5E602A0083780C /* PublicCallListAppModel.h */,
+				80E3D6101B5E602A0083780C /* PublicCallPointsManager.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
 		8EED628F198A1D13000A4449 = {
 			isa = PBXGroup;
 			children = (
@@ -225,6 +275,11 @@
 		8EED629A198A1D13000A4449 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				80E3D61D1B5E60CA0083780C /* libicucore.dylib */,
+				80E3D61B1B5E60C10083780C /* CoreMotion.framework */,
+				80E3D6191B5E609E0083780C /* StoreKit.framework */,
+				80E3D6171B5E60950083780C /* libsqlite3.dylib */,
+				80E3D6151B5E608C0083780C /* QuartzCore.framework */,
 				8E3483011B562DB100A40C55 /* AlipaySDK.framework */,
 				8E3483021B562DB100A40C55 /* AMapSearchKit.framework */,
 				8E3483031B562DB100A40C55 /* BaiduMapAPI.framework */,
@@ -266,6 +321,7 @@
 		8EED62A1198A1D13000A4449 /* HBuilder-Hello */ = {
 			isa = PBXGroup;
 			children = (
+				80E3D6081B5E602A0083780C /* lib */,
 				8E3483891B56838600A40C55 /* AMap.bundle */,
 				8E34838A1B56838600A40C55 /* TencentOpenApi_IOS_Bundle.bundle */,
 				8E34838B1B56838600A40C55 /* WeiboSDK.bundle */,
@@ -406,6 +462,7 @@
 				8EED62E4198A215A000A4449 /* icon144.png in Resources */,
 				8EED62E7198A215A000A4449 /* icon40.png in Resources */,
 				8EED62F2198A2166000A4449 /* Default-568h@2x.png in Resources */,
+				80E3D6121B5E602A0083780C /* btn_close.png in Resources */,
 				7A6D778919FB5A9B0076EEFE /* icon180.png in Resources */,
 				7A6D778F19FB5AAD0076EEFE /* Default-Landscape-736h@3x.png in Resources */,
 				8E34838C1B56838600A40C55 /* AMap.bundle in Resources */,
@@ -414,6 +471,7 @@
 				8EED62A6198A1D13000A4449 /* InfoPlist.strings in Resources */,
 				8EED64AD198A39D7000A4449 /* control.xml in Resources */,
 				8EED62E2198A215A000A4449 /* icon114.png in Resources */,
+				80E3D6131B5E602A0083780C /* btn_home.png in Resources */,
 				8EED62E5198A215A000A4449 /* icon152.png in Resources */,
 				8EED62E9198A215A000A4449 /* icon57.png in Resources */,
 				8EED62F4198A2166000A4449 /* Default@2x.png in Resources */,
@@ -572,7 +630,10 @@
 				);
 				INFOPLIST_FILE = "HBuilder-Hello/HBuilder-Hello-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
-				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/../SDK/libs/Release$(EFFECTIVE_PLATFORM_NAME)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(SRCROOT)/../SDK/libs/Release$(EFFECTIVE_PLATFORM_NAME)",
+					"$(PROJECT_DIR)/HBuilder-Hello/lib",
+				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-llibUI",
@@ -665,7 +726,10 @@
 				);
 				INFOPLIST_FILE = "HBuilder-Hello/HBuilder-Hello-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
-				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/../SDK/libs/Release$(EFFECTIVE_PLATFORM_NAME)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(SRCROOT)/../SDK/libs/Release$(EFFECTIVE_PLATFORM_NAME)",
+					"$(PROJECT_DIR)/HBuilder-Hello/lib",
+				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-llibUI",

@@ -9,6 +9,8 @@
 #import "AppDelegate.h"
 #import "PDRCore.h"
 #import "PDRCommonString.h"
+#import "PublicCallList.h"   //有米,AppDelegate.m文件中初始化PublicCallSDK
+#import "PublicCallConfig.h" //有米,AppDelegate.m文件中初始化PublicCallSDK
 
 @implementation AppDelegate
 
@@ -27,6 +29,24 @@
     [PDRCore Instance].launchOptions = launchOptions;
     [[PDRCore Instance] load];
 
+    // *** 以下代码为初始化有米SDK *** //
+    
+    [PublicCallConfig PublicCallSetUserID:@"000e4b1fca15c80a"];// [可选]
+    
+    // 例如开发者的应用是有登录功能的，则可以使用登录后的用户账号来替代有米为每台机器提供的标识（有米会为每台设备生成的唯一标识符）。
+    [PublicCallConfig PublicCallLaunchWithAppID:@"000e4b1fca15c80a" PublicCallAppSecret:@"27b23746f4756bc3"];
+    
+    [self.window makeKeyAndVisible];
+    // 设置显示全屏广告的window
+    [PublicCallConfig PublicCallSetFullScreenWindow:self.window];
+    
+    // 初始化积分墙
+    [PublicCallList PublicCallMyEnable];
+    
+        
+    // *** 以上代码为初始化有米SDK *** //
+
+    
     return YES;
 }
 

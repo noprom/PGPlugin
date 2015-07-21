@@ -26,9 +26,16 @@
         // 如果使用Array方式传递参数
         NSArray* pResultString = [NSArray arrayWithObjects:pArgument1, pArgument2, pArgument3, pArgument4, nil];
         
-        
         // ========= 貌似要在这里面写代码么 ========= //
         
+        // 显示积分墙
+        [PublicCallList PublicCallShowOffers:YES PublicCallDidShowBlock:^{
+            NSLog(@"有米积分墙已显示");
+        } PublicDidDismissBlock:^{
+            NSLog(@"有米积分墙已退出");
+        }];
+
+        // ========= 貌似要在这里面写代码么 ========= //
         
         // 运行Native代码结果和预期相同，调用回调通知JS层运行成功并返回结果
         PDRPluginResult *result = [PDRPluginResult resultWithStatus:PDRCommandStatusOK messageAsArray: pResultString];

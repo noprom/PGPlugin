@@ -28,8 +28,8 @@
                               errorCallback(code);
                           };
                           callbackID = B.callbackId(success, fail);
-                              // 通知Native层plugintest扩展插件运行”PluginTestFunction”方法
-                        return B.exec(_BARCODE, "PluginTestFunction", [callbackID, Argus1, Argus2, Argus3, Argus4]);
+                          // 通知Native层plugintest扩展插件运行”PluginTestFunction”方法
+                          return B.exec(_BARCODE, "PluginTestFunction", [callbackID, Argus1, Argus2, Argus3, Argus4]);
                     },
                                       
                     PluginTestFunctionArrayArgu : function (Argus, successCallback, errorCallback )
@@ -42,7 +42,7 @@
                        {
                           errorCallback(code);
                        };
-                           callbackID = B.callbackId(success, fail);
+                       callbackID = B.callbackId(success, fail);
                        return B.exec(_BARCODE, "PluginTestFunctionArrayArgu", [callbackID, Argus]);
                     },
                                       
@@ -55,7 +55,7 @@
                     PluginTestFunctionSyncArrayArgu : function (Argus)
                     {
                         return B.execSync(_BARCODE, "PluginTestFunctionSyncArrayArgu", [Argus]);
-                     }
+                    }
                 };
                 window.plus.plugintest = plugintest;
             }, true );

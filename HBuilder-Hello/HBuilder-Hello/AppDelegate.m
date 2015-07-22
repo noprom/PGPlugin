@@ -9,8 +9,15 @@
 #import "AppDelegate.h"
 #import "PDRCore.h"
 #import "PDRCommonString.h"
-#import "PublicCallList.h"   //有米,AppDelegate.m文件中初始化PublicCallSDK
-#import "PublicCallConfig.h" //有米,AppDelegate.m文件中初始化PublicCallSDK
+//有米SDK
+#import "PublicCallList.h"
+#import "PublicCallConfig.h"
+//有米SDK
+//点乐SDK
+#import "JJSDK.h"
+#import "JJDiamondConstants.h"
+//点乐SDK
+
 
 @implementation AppDelegate
 
@@ -45,6 +52,13 @@
     
         
     // *** 以上代码为初始化有米SDK *** //
+    
+    // *** 以下代码为初始化点乐SDK *** //
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(offersWallConnectSuccess:) name:JJ_CONNECT_SUCCESS_NOTIFICATION object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(offersWallConnectFailed:) name:JJ_CONNECT_FAILED_NOTIFICATION object:nil];
+    // appId需要更换
+    [JJSDK requestJJSession:@"2652099a792fbc3d59f887113a3bb3d2" withUserID:@"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"];
+    // *** 以下代码为初始化点乐SDK *** //
 
     
     return YES;
@@ -139,4 +153,21 @@
     [super dealloc];
 }
 
+// ******************以下代码为点乐SDK推送****************** //
+
+#pragma mark - DianJoy offers wall connect notifications
+- (void)offersWallConnectSuccess:(NSNotification *)notification
+{
+    //    NSLog(@"connection success");
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"notice" message:@"connect success" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+    [alertView show];
+    //    [alertView release];
+}
+- (void)offersWallConnectFailed:(NSNotification *)notification
+{
+    //    NSLog(@"connection failed");
+}
+
+
+// ******************以上代码为点乐SDK推送****************** //
 @end

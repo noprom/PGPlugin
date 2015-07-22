@@ -6,9 +6,9 @@
 //  Copyright (c) 2015年 DCloud. All rights reserved.
 //
 
-#include "PGPluginTest.h"
+#include "Youmi.h"
 
-@implementation PGPluginTest
+@implementation Youmi
 
 - (void)PluginTestFunction:(PGMethod*)commands
 {

@@ -18,7 +18,7 @@
 #import "PublicCallListAppModel.h"
 #import "PublicCallPointsManager.h" //(用于查询积分)
 
-@interface PGPluginTest : PGPlugin
+@interface Youmi : PGPlugin
 
 
 - (void)PluginTestFunction:(PGMethod*)command;

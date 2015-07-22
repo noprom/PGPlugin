@@ -39,9 +39,9 @@ function plusReady(){
      */
     
     // 声明的JS“扩展插件别名”
-    var _BARCODE           = 'plugintest',
+    var _BARCODE           = 'youmi',
     B                      = window.plus.bridge;
-    var plugintest =
+    var youmi =
     {
         // 声明异步返回方法
         PluginTestFunction : function (Argus1, Argus2, Argus3, Argus4, successCallback, errorCallback )
@@ -55,7 +55,7 @@ function plusReady(){
                 errorCallback(code);
             };
             callbackID = B.callbackId(success, fail);
-            
+            alert("333");
             // 通知Native层plugintest扩展插件运行”PluginTestFunction”方法
             return B.exec(_BARCODE, "PluginTestFunction", [callbackID, Argus1, Argus2, Argus3, Argus4]);
         },
@@ -83,7 +83,7 @@ function plusReady(){
             return B.execSync(_BARCODE, "PluginTestFunctionSyncArrayArgu", [Argus]);
         }
     };
-    window.plus.plugintest = plugintest;
+    window.plus.youmi = youmi;
     
     /**
      *  ============================================================
@@ -195,14 +195,15 @@ function preateClear(){
 
         
         function pluginShow() {
-            alert("before plugin");
-            plus.plugintest.PluginTestFunction("Html5","Plus","AsyncFunction","MultiArgument!",
-                                               function( result ) {
-                                                    alert( result[0]  + "_" + result[1]  + "_" + result[2]  + "_" + result[3] );}
-                                               ,function(result){
-                                                    alert(result)
-                                               });
-            alert("after plugin");
+            alert("111");
+        plus.youmi.PluginTestFunction("Html5","Plus","AsyncFunction","MultiArgument!",
+            function( result )
+            {
+                alert( result[0]  + "_" + result[1]  + "_" + result[2]  + "_" + result[3] );},
+            function(result){
+                    alert(result)
+            });
+            alert("222");
         }
 
         /**
@@ -398,17 +399,6 @@ li:active {
             *  ============================================================
             *
             -->
-           
-            <li onclick="pluginShow()">
-                <span class="item">plugintest
-                    <div class="chs">plugintest插件调用</div>
-                </span>
-            </li>
-            <li id="plus/plugintest.html" onclick="clicked(this.id)">
-                <span class="item">plugintest2
-                    <div class="chs">plugintest2</div>
-                </span>
-            </li>
             <li onclick="pluginShow()">
                 <span class="item">有米插件
                     <div class="chs">有米插件</div>

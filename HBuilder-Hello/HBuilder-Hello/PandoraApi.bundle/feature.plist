@@ -2,12 +2,12 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>plugintest</key>
+	<key>youmi</key>
 	<dict>
 		<key>global</key>
 		<false/>
 		<key>class</key>
-		<string>PGPluginTest</string>
+		<string>Youmi</string>
 	</dict>
 	<key>Geolocation</key>
 	<dict>

@@ -9,14 +9,7 @@
 #import "AppDelegate.h"
 #import "PDRCore.h"
 #import "PDRCommonString.h"
-//有米SDK
-#import "PublicCallList.h"
-#import "PublicCallConfig.h"
-//有米SDK
-//点乐SDK
-#import "JJSDK.h"
-#import "JJDiamondConstants.h"
-//点乐SDK
+
 
 
 @implementation AppDelegate

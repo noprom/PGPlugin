@@ -10,7 +10,7 @@
 
 @implementation Youmi
 
-- (void)PluginTestFunction:(PGMethod*)commands
+- (void)shouYoumi:(PGMethod*)commands
 {
     if ( commands ) {
         

@@ -21,7 +21,7 @@
 @interface Youmi : PGPlugin
 
 
-- (void)PluginTestFunction:(PGMethod*)command;
+- (void)shouYoumi:(PGMethod*)command;
 - (void)PluginTestFunctionArrayArgu:(PGMethod*)command;
 
 - (NSData*)PluginTestFunctionSync:(PGMethod*)command;

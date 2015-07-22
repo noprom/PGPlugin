@@ -44,7 +44,7 @@ function plusReady(){
     var youmi =
     {
         // 声明异步返回方法
-        PluginTestFunction : function (Argus1, Argus2, Argus3, Argus4, successCallback, errorCallback )
+        Youmi : function (Argus1, Argus2, Argus3, Argus4, successCallback, errorCallback )
         {
             var success = typeof successCallback !== 'function' ? null : function(args)
             {
@@ -55,9 +55,9 @@ function plusReady(){
                 errorCallback(code);
             };
             callbackID = B.callbackId(success, fail);
-            alert("333");
+            
             // 通知Native层plugintest扩展插件运行”PluginTestFunction”方法
-            return B.exec(_BARCODE, "PluginTestFunction", [callbackID, Argus1, Argus2, Argus3, Argus4]);
+            return B.exec(_BARCODE, "shouYoumi", [callbackID, Argus1, Argus2, Argus3, Argus4]);
         },
         PluginTestFunctionArrayArgu : function (Argus, successCallback, errorCallback )
         {
@@ -90,8 +90,6 @@ function plusReady(){
      *  ❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️扩展插件代码结束❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️
      *  ============================================================
      */
-
-
 
 
 }
@@ -194,16 +192,15 @@ function preateClear(){
          */
 
         
-        function pluginShow() {
-            alert("111");
-        plus.youmi.PluginTestFunction("Html5","Plus","AsyncFunction","MultiArgument!",
+        function showYoumi() {
+            plus.youmi.Youmi("Html5","Plus","AsyncFunction","MultiArgument!",
             function( result )
             {
-                alert( result[0]  + "_" + result[1]  + "_" + result[2]  + "_" + result[3] );},
+                 console.log("调用有米成功:" + result);
+            },
             function(result){
-                    alert(result)
+                 console.log("调用有米失败:" + result);
             });
-            alert("222");
         }
 
         /**
@@ -399,7 +396,7 @@ li:active {
             *  ============================================================
             *
             -->
-            <li onclick="pluginShow()">
+            <li onclick="showYoumi()">
                 <span class="item">有米插件
                     <div class="chs">有米插件</div>
                 </span>
